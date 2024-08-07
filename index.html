@@ -1,46 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JOGADOR MR</title>
+    <title>DEMON SLAYER 4 TEMPORADA</title>
     <style>
         body {
-            background-color: blue;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            color: yellow;
-            margin-bottom: 50px;
-        }
-        .button-container {
+            background-image: url('tanjiro.jpg'); /* Certifique-se de que a imagem esteja na mesma pasta que o HTML */
+            background-size: cover;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            color: black;
         }
-        .button-container a {
+        h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        button {
             background-color: black;
-            color: white;
-            text-decoration: none;
-            padding: 15px 30px;
-            margin: 10px;
-            border-radius: 5px;
-            font-size: 20px;
+            color: green;
+            font-size: 1.5em;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
         }
-        .button-container a:hover {
-            background-color: #444;
+        video {
+            display: none;
+            margin-top: 20px;
+            width: 80%;
         }
     </style>
 </head>
 <body>
-    <h1>JOGADOR MR</h1>
-    <div class="button-container">
-        <a href="codigo-dos-mapas.html" target="_blank">CODIGO DOS MAPAS</a>
-        <a href="https://youtube.com/@jogador_mr?si=23I_p5A8xQO8tOk4" target="_blank">TIK TOK</a>
-        <a href="https://www.instagram.com/jogador_mr_gamer?igsh=bmJ6Zm55eWZ5cGJw" target="_blank">INSTAGRAM</a>
-    </div>
+    <h1>DEMON SLAYER 4 TEMPORADA</h1>
+    <button onclick="document.getElementById('meuVideo').style.display='block'">EP 1</button>
+    <video id="meuVideo" controls>
+        <source src="seu_video.mp4" type="video/mp4">
+        Seu navegador não suporta a tag de vídeo.
+    </video>
 </body>
 </html>
